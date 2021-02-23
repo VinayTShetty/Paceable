@@ -1,0 +1,14 @@
+Code Tutor Notes
+----------------
+
+Parceable:-Android Recomends using Parceable instead of Serializable intterface for passing custom objects.
+Reason:-Parceable is much faster(almost 2 times ) faster in marshalling and unmarshalling compared to serializable.
+
+Steps to implement Parceable
+----------------------------
+1)Let the bean class implement Parceable interface
+2)Define overloaded constrictor for the bean class which has parcel as argument.
+3)implement method for parceable interface.
+    a)describe contents.
+    b)writeToParcel(Parcel out,int flags)
+    c)Create a non-null static filed called CREATOR of a type that implements the Parceable.creator interface.
