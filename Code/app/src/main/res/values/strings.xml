@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Parceable</string>
+    <string name="USER_DATA">user_data_information</string>
 </resources>
